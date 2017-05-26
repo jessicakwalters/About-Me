@@ -64,5 +64,7 @@ console.log(yesOrNo);
 
     console.log(question5 + user + ' input ' + answer5);
 
-    //document.write(question1, answer1);
+    alert('Your answers will appear at the bottom of the page!');
+/* Tried to use document.write to print the answers to the page, but wasn't able to manipulate its placement or style.  So I decided to use getElementById instead*/
+  
     document.getElementById('quiz-results').innerHTML = question1 + '<br>' + answer1 + '<br>' + question2 + '<br>' + answer2 + '<br>' + question3 + '<br>' + answer3 + '<br>' + question4 + '<br>' + answer4 + '<br>' + question5 + '<br>' + answer5;
