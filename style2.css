@@ -102,16 +102,24 @@ td {
 }
 
 #quiz-results1, #quiz-results2, #quiz-results3, #quiz-results4, #quiz-results5, #quiz-results6 {
-  font-size: 18px;
+  font-size: 16px;
   display: inline-block;
   position: relative;
   right: -300px;
   top: -200px;
-  margin: 50px;
-  padding: 20px;
+  margin: 25px;
+  padding: 10px;
+  width: 200px;
 }
 
 br {
   margin: 20px;
   padding: 20px;
+}
+
+#bonus {
+  width: 100px;
+  position: relative;
+  right: 790px;
+  top: -425px
 }
