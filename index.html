@@ -7,9 +7,45 @@
     <link href="jessica-logo.png" rel="icon" type="image/png" />
   </head>
   <body>
-    <header class="header-dark-purple">
-      <h1><br> Jessica K. Walters</h1>
+    <header>
+      <h1>Jessica K. Walters</h1>
+      <ul class="nav-bar">
+        <li><a class= "nav-item" href="#">RESUME</a></li>
+        <li><a class= "nav-item" href="#">WRITING</a></li>
+        <li><a class= "nav-item" href="#">WEB DEVELOPMENT</a></li>
+        <li><a class= "nav-item" href="#">DESIGN</a></li>
+      </ul>
     </header>
+    <hr>
+    <div class="slideshow">
+      <div class="fade">
+        <img src="slideshow1.jpg"/>
+      </div>
+
+      <div class="fade">
+        <img src="slideshow2.jpg"/>
+      </div>
+
+      <div class="fade">
+        <img src="slideshow3.jpg"/>
+      </div>
+
+      <div class="fade">
+        <img src="slideshow4.jpg"/>
+      </div>
+
+      <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div class="slideshow-buttons">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
     <div class="dark-purple">
       <h2>Overview</h2>
       <p>I am an experienced designer and builder of projects and process.  I source the materials, create the blueprints, and define a path of execution across operations, project management, and strategic initiatives. I specialize in managing executive teams by making business recommendations based on key metrics and knowledge derived from hands-on involvement in all key aspects of the business. </p>
