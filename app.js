@@ -1,5 +1,7 @@
 'use strict';
 
+
+//Quiz js
 var user = prompt("Hello! Welcome to Jessica's About Me Page.  What is your name?");
 var yesOrNo = confirm('Hello, ' + user + '. I\'m going to ask you a series of questions. They are yes or no questions, so please answer with a Y or N.');
 console.log(yesOrNo);
@@ -66,5 +68,5 @@ console.log(yesOrNo);
 
     alert('Your answers will appear at the bottom of the page!');
 /* Tried to use document.write to print the answers to the page, but wasn't able to manipulate its placement or style.  So I decided to use getElementById instead*/
-  
+
     document.getElementById('quiz-results').innerHTML = question1 + '<br>' + answer1 + '<br>' + question2 + '<br>' + answer2 + '<br>' + question3 + '<br>' + answer3 + '<br>' + question4 + '<br>' + answer4 + '<br>' + question5 + '<br>' + answer5;

@@ -1,15 +1,39 @@
 @font-face {
-  font-family: 'Raleway', sans-serif;
-  src: url('https://fonts.googleapis.com/css?family=Raleway:sans-serif');
+  font-family: 'Josefin Sans', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 }
 
+.header-image {
+  width: 100%;
+  z-index: 1;
+}
 h1 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: lighter;
   font-size: 36px;
+  color: #FFFFFF;
+  background-color: none;
+  text-align: center;
+  z-index: 2;
+}
+
+h2 {
+
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
   color: #535459;
   background-color: #FFFFFF;
-  text-align: center;
+  text-align: left;
+}
+
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 12px;
+  color: #535459;
+  background-color: #FFFFFF;
+  text-align: left;
 }
 
 ul {
@@ -19,7 +43,7 @@ ul {
 li {
   float: left;
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: lighter;
   font-size: 16px;
   color: #535459;
@@ -57,55 +81,38 @@ hr {
   color: #CDCDCF;
 }
 
-.slideshow {
-  width: 100%;
-  margin:auto;
-}
-
-.fade {
-  display: none;
+.about-me-image {
+  width: 200px;
+  margin: 40px;
+  display: inline;
 
 }
 
-.previous {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: #FFFFFF;
-  font-weight: lighter;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 2px 2px 0;
+.about-me-text {
+  float: left;
+  display: inline;
+  position: relative;
+  top: 50px;
+  font-size: 14px;
+  width: 300px;
+  margin: 20px;
+
 }
 
-.next {
-  cursor: pointer;
-  right: 0;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: #FFFFFF;
-  font-weight: lighter;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 2px 0 0 2px;
-}
+.float {
+  float: left;
+  display: inline;
+  font-size: 14px;
+  width: 300px;
 
-.previous:hover, .next:hover {
-  background-color: #FFFFFF;
-  opacity: .5;
 }
-.dot {
-  cursor:pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #535459;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+#about-me {
+  position: relative;
+  top: -50px;
+  right: -100px;
+  background-color: none;
+}
+.section {
+  display: block;
+
 }
