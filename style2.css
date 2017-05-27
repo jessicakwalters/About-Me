@@ -1,4 +1,127 @@
-@font-face {
-  font-family: 'Raleway', sans-serif;
-  src: url('https://fonts.googleapis.com/css?family=Raleway:sans-serif');
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+header, footer {
+  background-color: #050505;
+  height: 500px;
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 36px;
+  color: #FFFFFF;
+  background-color: #050505;
+  text-align: left;
+  z-index: 2;
+  padding-top: 250px;
+  padding-left: 45px;
+}
+
+h2 {
+
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  color: #535459;
+  background-color: #FFFFFF;
+  text-align: left;
+}
+
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 12px;
+  color: #FFFFFF;
+  background-color: #050505;
+  text-align: center;
+}
+
+ul {
+background-color: #050505;
+}
+
+li {
+  float: left;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
+  background-color: #050505;
+  margin: 20px;
+}
+
+.nav-bar{
+  list-style-type: none;
+  text-align: center;
+  width: 700px;
+  margin: 10px auto 10px auto;
+  color: #FFFFFF
+
+}
+.nav-item {
+  padding: 5px;
+  color: #FFFFFF;
+  position: relative;
+  left: 175px;
+  top: 100px;
+  background-color: #050505;
+  text-align: center;
+  text-decoration: none;
+  margin: auto 10px auto 10px;
+}
+
+li a {
+  text-decoration: none;
+  color: #535459;
+}
+li a:hover {
+  color: #EOEOE7;
+  text-decoration: none;
+}
+
+.icon {
+  float: left;
+  padding-top: 25px;
+  padding-left: 140px;
+  width: 100px;
+}
+
+td {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: lighter;
+  color: #535459;
+  font-size: 14px;
+  width: 500px;
+  padding: 20px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#quiz-results1, #quiz-results2, #quiz-results3, #quiz-results4, #quiz-results5, #quiz-results6 {
+  font-size: 16px;
+  display: inline-block;
+  position: relative;
+  right: -300px;
+  top: -200px;
+  margin: 25px;
+  padding: 10px;
+  width: 200px;
+}
+
+br {
+  margin: 20px;
+  padding: 20px;
+}
+
+#bonus {
+  width: 100px;
+  position: relative;
+  right: 790px;
+  top: -425px
+
 }
