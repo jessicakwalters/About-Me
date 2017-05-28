@@ -1,5 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('http://allfont.net/allfont.css?fonts=linotypezapfino-one');
+
 
 header, footer {
   background-color: #050505;
@@ -19,13 +21,24 @@ h1 {
 }
 
 h2 {
-
   font-family: 'Josefin Sans', sans-serif;
   font-weight: lighter;
   font-size: 14px;
   color: #535459;
   background-color: #FFFFFF;
   text-align: left;
+}
+
+.caption {
+  font-family:  'LinotypeZapfino One';
+  font-weight: lighter;
+  font-size: 42px;
+  text-align: left;
+  position: relative;
+  top: -35px;
+  margin-left: 200px;
+  color: #9DC6E6;
+  background-color: #050505;
 }
 
 p {
@@ -63,8 +76,8 @@ li {
   padding: 5px;
   color: #FFFFFF;
   position: relative;
-  left: 175px;
-  top: 100px;
+  left: 195px;
+  top: 15px;
   background-color: #050505;
   text-align: center;
   text-decoration: none;
