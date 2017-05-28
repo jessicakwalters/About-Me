@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 @import url('http://allfont.net/allfont.css?fonts=linotypezapfino-one');
+@import url('https://fonts.googleapis.com/css?family=Italianno');
 
 
 header, footer {
@@ -30,7 +31,7 @@ h2 {
 }
 
 .caption {
-  font-family:  'LinotypeZapfino One';
+  font-family:  'LinotypeZapfino One', 'italiano', cursive;
   font-weight: lighter;
   font-size: 42px;
   text-align: left;
