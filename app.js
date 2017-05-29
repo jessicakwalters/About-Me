@@ -2,6 +2,7 @@
 
 
 //Quiz js
+
 var user = prompt("Hello! Welcome to Jessica's About Me Page.  What is your name?");
 while (user === '') {
   user = prompt("Hello! Welcome to Jessica's About Me Page.  What is your name?");
