@@ -18,7 +18,7 @@ h1 {
   background-color: #050505;
   text-align: left;
   z-index: 2;
-  padding-top: 250px;
+  padding-top: 80px;
   padding-left: 45px;
 }
 
@@ -135,8 +135,7 @@ br {
 
 #bonus {
   width: 100px;
-  position: relative;
-  right: 790px;
-  top: -425px
+  margin-left: 1000px;
+  margin-top: 20px;
 
 }
