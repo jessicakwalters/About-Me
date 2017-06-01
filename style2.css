@@ -1,6 +1,5 @@
 
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
-@import url('http://allfont.net/allfont.css?fonts=linotypezapfino-one');
 @import url('https://fonts.googleapis.com/css?family=Bilbo');
 
 
@@ -8,6 +7,39 @@
 header, footer {
   background-color: #050505;
   height: 500px;
+}
+
+.dark-section {
+  background-color: #050505;
+  height: 500px;
+}
+
+.light-section {
+  background-color: #FFFFFF;
+  height: 500px;
+  margin-top: 0;
+}
+
+.interests {
+  float: left;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 36px;
+  background-color: #FFFFFF;
+  color: #535459;
+
+}
+
+.interests-container {
+  padding-top: 150px;
+}
+
+.interests-list {
+  margin-left: 50%;
+  padding: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: lighter;
+  color: #535459;
 }
 
 h1 {
@@ -56,7 +88,7 @@ ul {
 background-color: #050505;
 }
 
-li {
+.dark-list {
   float: left;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
