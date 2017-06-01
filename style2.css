@@ -43,6 +43,7 @@ header, footer {
 }
 
 h1 {
+  float: left;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: lighter;
   font-size: 36px;
@@ -69,8 +70,7 @@ h2 {
   font-size: 42px;
   text-align: left;
   position: relative;
-  top: -35px;
-  margin-left: 200px;
+  top: 260px;
   color: #9DC6E6;
   background-color: #050505;
 }
@@ -110,8 +110,8 @@ background-color: #050505;
   padding: 5px;
   color: #FFFFFF;
   position: relative;
-  left: 195px;
-  top: 40px;
+  left: 225px;
+  top: 330px;
   background-color: #050505;
   text-align: center;
   text-decoration: none;
@@ -149,14 +149,14 @@ td {
   font-size: 18px;
 }
 
-#quiz-results1, #quiz-results2, #quiz-results3, #quiz-results4, #quiz-results5, #quiz-results6 {
+#quiz-results1, #quiz-results2, #quiz-results3, #quiz-results4, #quiz-results5, #quiz-results6, #quiz-results7, #quiz-results8 {
   font-size: 16px;
   display: inline-block;
   position: relative;
-  right: -300px;
-  top: -100px;
-  margin: 25px;
-  padding: 10px;
+  top: 20px;
+  right: -150px;
+  margin: 20px;
+  padding: 5px;
   width: 200px;
 }
 

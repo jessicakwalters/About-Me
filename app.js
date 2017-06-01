@@ -10,7 +10,7 @@ while (user === '') {
 var yesOrNo = confirm('Hello, ' + user + '. I\'m going to ask you a series of questions. They are yes or no questions, so please answer with a Y or N. If you get more than 3 right answers, a special image will appear, so guess carefully.');
 console.log(yesOrNo);
 
-/*
+
     //Question 1
     var score = 0;
     var question1 = 'Does Jessica speak French?';
@@ -26,7 +26,8 @@ console.log(yesOrNo);
       alert('Sorry, you\'re wrong. She really does speak French!.');
     }
 
-    console.log(question1 + user + ' input ' + answer1)
+    console.log(question1 + user + ' input ' + answer1);
+    console.log(score);
 
     //Question 2
     var question2 = 'Does Jessica have a dog?';
@@ -43,6 +44,7 @@ console.log(yesOrNo);
     }
 
     console.log(question2 + user + ' input ' + answer2);
+    console.log(score);
 
     //Question 3
     var question3 = 'Has Jessica been to Fiji?'
@@ -59,6 +61,7 @@ console.log(yesOrNo);
     }
 
     console.log(question3 + user + ' input ' + answer3);
+    console.log(score);
 
     //Question 4
     var question4 = 'Does Jessica like to ski?';
@@ -75,6 +78,7 @@ console.log(yesOrNo);
     }
 
     console.log(question4 + user + ' input ' + answer4);
+    console.log(score);
 
     //Question 5
     var question5 = 'Does Jessica like hot dogs?';
@@ -91,7 +95,7 @@ console.log(yesOrNo);
     }
 
     console.log(question5 + user + ' input ' + answer5);
-*/
+    console.log(score);
     //Question6
 
 
@@ -99,12 +103,15 @@ console.log(yesOrNo);
     var answer6 = prompt(user + '\: ' + question6);
 
     for (var i=0; i<4; i++) {
+      //determine if answer is correct or not
       if(answer6 != 31) {
+        //give different response if answer is too high or too low
         if (answer6 < 31) {
         alert('Wrong.  You guessed too low!');
         } else {
         alert('Seriously? That is obviously too high.');
         }
+        //limit user to 3 guesses
         if (i === 3) {
           alert('Sorry, you are out of guesses. Jessica is 31');
         } else {
@@ -113,16 +120,38 @@ console.log(yesOrNo);
       }
       else {
         alert('Correct! Jessica is 31.');
+        //stop the loop on correct answers
         i=4;
+        score ++;
     }
     };
-
+    console.log(question6 + user + ' input ' + answer6);
+    console.log(score);
 
     //Question7
+    var question7 = 'What states has Jessica lived in besides Washington?';
+    var answer7 = prompt(user + '\: ' + question7);
+    var states = ['ILLINOIS', 'WYOMING']
 
+    for (var i=0; i<6; i++) {
+      //Search array for answer7
+      var guess = answer7.toUpperCase();
+      var index = states.indexOf(guess);
+      console.log(index);
+      //check if guess exists in the array
+      if(index === -1) {
+        alert('Wrong.  She has never lived there!');
+        answer7 = prompt(user + '\: ' + question7);
+      } else {
+        alert('Correct! Here are all the states where Jessica has lived: ' + states.toString());
+        //stop the loop on correct answers
+        i = 6;
+        score ++;
+      }
+    };
 
-
-
+    console.log(question7 + user + ' input ' + answer7);
+    console.log(score);
 
     alert('Your answers will appear at the bottom of the page!');
 
@@ -134,7 +163,9 @@ console.log(yesOrNo);
     document.getElementById('quiz-results3').innerHTML = question3 + '<br> '+ 'Your answer: '+ answer3 + '<br>' + 'Actual answer: Jessica has never been to Fiji';
     document.getElementById('quiz-results4').innerHTML = question4 + '<br> '+ 'Your answer: '+ answer4 + '<br>' + 'Actual answer: Jessica loves to ski!';
     document.getElementById('quiz-results5').innerHTML = question5 + '<br> '+ 'Your answer: '+ answer5 + '<br>' + 'Actual answer: Jessica does does not like hot dogs.';
-    document.getElementById('quiz-results6').innerHTML = user + '\'s score: ' + score + ' out of 7';
+    document.getElementById('quiz-results6').innerHTML = question6 + '<br> '+ 'Your answer: '+ answer6 + '<br>' + 'Actual answer: Jessica is 31.';
+    document.getElementById('quiz-results7').innerHTML = question7 + '<br> '+ 'Your answer: '+ answer7 + '<br>' + 'Actual answer: Jessica has lived in Washington, Illinois, and Wyoming.';
+    document.getElementById('quiz-results8').innerHTML = user + '\'s score: ' + score + ' out of 7';
     if (score > 3){
       document.getElementById('bonus').style.display = 'auto';
     } else {
