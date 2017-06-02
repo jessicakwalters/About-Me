@@ -20,21 +20,23 @@ header, footer {
   margin-top: 0;
 }
 
-.interests {
+.bucket-list-header {
   float: left;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: lighter;
   font-size: 36px;
   background-color: #FFFFFF;
-  color: #535459;
+  color: #050505;
 
 }
 
-.interests-container {
+.bucket-list-container {
   padding-top: 150px;
+  column-count: 2;
+  column-gap: 0px;
 }
 
-.interests-list {
+.bucket-list {
   margin-left: 50%;
   padding: 10px;
   font-family: 'Josefin Sans', sans-serif;
