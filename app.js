@@ -49,7 +49,7 @@ for (var i = 0; i<=4; i++) {
   console.log(questionsAndAnswers[i][0] + user + ' input ' + questionsAndAnswers[i][4]);
 }
 
-/*
+/* This section has the original quiz code
 //Quiz js
 
 var user = prompt("Hello! Welcome to Jessica's About Me Page.  What is your name?");
