@@ -1,6 +1,11 @@
 'use strict';
 //Array js
 //question[0], yesResponse[1], noResponse[2], actualanswer[3], usersanswer[4]
+var question6;
+var answer6;
+var question7;
+var answer7;
+var randomNumber;
 
 var user = prompt("Hello! Welcome to Jessica's About Me Page.  What is your name?");
 while (user === '') {
@@ -14,6 +19,7 @@ var questionsAndAnswers =[['Does Jessica speak French?', 'Bien fait! She does sp
 
 var score = 0;
 
+function yesNoQuestions (){
 for (var i = 0; i<=4; i++) {
   var answer = prompt(user + '\: ' + questionsAndAnswers[i][0]);
   //repromt user if they enter nothing
@@ -48,7 +54,7 @@ for (var i = 0; i<=4; i++) {
 
   console.log(questionsAndAnswers[i][0] + user + ' input ' + questionsAndAnswers[i][4]);
 }
-
+};
 /* This section has the original quiz code
 //Quiz js
 
@@ -148,10 +154,11 @@ console.log(yesOrNo);
 */
     //Question6
 
-
-    var question6 = 'Guess a random number between 1 and 10';
-    var answer6 = prompt(user + '\: ' + question6);
-    var randomNumber =  Math.floor((Math.random() * 10) + 1);
+yesNoQuestions();
+function randomNumberQuestion(){
+    question6 = 'Guess a random number between 1 and 10';
+    answer6 = prompt(user + '\: ' + question6);
+    randomNumber =  Math.floor((Math.random() * 10) + 1);
     for (var i=0; i<4; i++) {
       //determine if answer is correct or not
       if(answer6 != randomNumber) {
@@ -174,13 +181,15 @@ console.log(yesOrNo);
         i=4;
         score ++;
     }
-    };
+  };
     console.log(question6 + user + ' input ' + answer6);
     console.log(score);
-
+}
+randomNumberQuestion();
     //Question7
-    var question7 = 'What states has Jessica lived in besides Washington?';
-    var answer7 = prompt(user + '\: ' + question7);
+    function statesQuestion (){
+    question7 = 'What states has Jessica lived in besides Washington?';
+    answer7 = prompt(user + '\: ' + question7);
     var states = ['ILLINOIS', 'WYOMING']
 
     for (var i=0; i<6; i++) {
@@ -202,7 +211,8 @@ console.log(yesOrNo);
 
     console.log(question7 + user + ' input ' + answer7);
     console.log(score);
-
+};
+statesQuestion();
     alert('Your answers will appear at the bottom of the page!');
 
 
