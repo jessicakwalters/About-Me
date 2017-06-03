@@ -2,59 +2,36 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 @import url('https://fonts.googleapis.com/css?family=Bilbo');
 
-
-
 header, footer {
   background-color: #050505;
   height: 500px;
+  margin: -10px;
 }
 
 .dark-section {
   background-color: #050505;
   height: 500px;
+  margin: -10px;
+  clear: left;
 }
 
 .light-section {
-  background-color: #FFFFFF;
   height: 500px;
   margin-top: 0;
 }
 
-.bucket-list-header {
-  float: left;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: lighter;
-  font-size: 36px;
-  background-color: #FFFFFF;
-  color: #050505;
-
-}
-
-.bucket-list-container {
-  padding-top: 150px;
-  column-count: 2;
-  column-gap: 0px;
-}
-
-.bucket-list {
-  margin-left: 50%;
-  padding: 10px;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: lighter;
-  color: #535459;
-}
-
 h1 {
   float: left;
+  position: relative;
+  top: 50%;
+  left: 5%;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: lighter;
   font-size: 36px;
   color: #FFFFFF;
-  background-color: #050505;
   text-align: left;
-  z-index: 2;
-  padding-top: 200px;
-  padding-left: 45px;
+  padding: 0;
+  margin: 0;
 }
 
 h2 {
@@ -62,19 +39,7 @@ h2 {
   font-weight: lighter;
   font-size: 14px;
   color: #535459;
-  background-color: #FFFFFF;
   text-align: left;
-}
-
-.caption {
-  font-family: 'LinotypeZapfino One', 'Bilbo', cursive;
-  font-weight: lighter;
-  font-size: 42px;
-  text-align: left;
-  position: relative;
-  top: 260px;
-  color: #9DC6E6;
-  background-color: #050505;
 }
 
 p {
@@ -82,42 +47,7 @@ p {
   font-weight: lighter;
   font-size: 12px;
   color: #FFFFFF;
-  background-color: #050505;
-  text-align: center;
-}
-
-ul {
-background-color: #050505;
-}
-
-.dark-list {
-  float: left;
-  text-align: center;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: lighter;
-  font-size: 16px;
-  background-color: #050505;
-  margin: 20px;
-}
-
-.nav-bar{
-  list-style-type: none;
-  text-align: center;
-  width: 700px;
-  margin: 10px auto 10px auto;
-  color: #FFFFFF
-
-}
-.nav-item {
-  padding: 5px;
-  color: #FFFFFF;
-  position: relative;
-  left: 225px;
-  top: 330px;
-  background-color: #050505;
-  text-align: center;
-  text-decoration: none;
-  margin: auto 10px auto 10px;
+  text-align: left;
 }
 
 li a {
@@ -129,48 +59,134 @@ li a:hover {
   text-decoration: none;
 }
 
-.icon {
-  width: 100px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.caption {
+  font-family: 'Bilbo', cursive;
+  position: relative;
+  top: 55%;
+  font-weight: lighter;
+  font-size: 42px;
+  margin: 0;
+  padding: 0;
+  color: #9DC6E6;
 }
 
-td {
+.dark-list {
+  float: right;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
+  margin: 5%;
+}
+
+.nav-bar{
+  list-style-type: none;
+  float: right;
+  position: relative;
+  top: 70%;
+  width: 65%;
+  padding: 0;
+  margin: 0;
+  color: #FFFFFF
+
+}
+.nav-item {
+  padding: 5px;
+  float: right;
+  color: #FFFFFF;
+  text-decoration: none;
+
+}
+
+.icon-block-row1 {
+  padding: 2%;
+  float: left;
+  width: 28%;
+  margin-top: 3%;
+}
+
+.icon-block-row2 {
+  padding: 2%;
+  float: left;
+  width: 28%;
+  margin-top: 0;
+}
+
+.icon {
+  width: 32.7%;
+  padding-left: 32.7%;
+  padding-right: 32.7%;
+}
+
+.icon-title {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: lighter;
+  color: #535459;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.icon-text {
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: lighter;
   color: #535459;
   font-size: 14px;
-  width: 500px;
   padding: 20px;
 }
 
-.title {
-  font-weight: bold;
-  font-size: 18px;
+.left-box-narrow {
+  width: 24.5%;
+  height: 100%;
+  float: left;
+}
+
+.left-box-wide {
+  padding-top: 2%;
+  width: 75%;
+  height: 100%;
+  float: left;
+}
+
+.pop-quiz-header {
+  margin-left: 12%;
 }
 
 #quiz-results1, #quiz-results2, #quiz-results3, #quiz-results4, #quiz-results5, #quiz-results6, #quiz-results7, #quiz-results8 {
   font-size: 16px;
-  display: inline-block;
-  position: relative;
-  top: 20px;
-  right: -150px;
-  margin: 20px;
-  padding: 5px;
-  width: 200px;
-}
-
-br {
-  margin: 20px;
-  padding: 20px;
+  float: left;
+  margin: 2%;
+  padding: .5%;
+  width: 26%;
+  height: 19.6%;
 }
 
 #bonus {
   width: 100px;
-  float: right;
-  margin-right: 25px;
-  margin-top: 20px;
+  float: left;
+  padding: 2%;
+}
 
+.bucket-list-header {
+  float: left;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 36px;
+  color: #050505;
+  margin-left: 10%;
+
+}
+
+.bucket-list-container {
+  padding-top: 20%;
+  column-count: 2;
+  width: 90%
+}
+
+.bucket-list {
+  margin-left: 25%;
+  padding: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: lighter;
+  color: #535459;
 }
